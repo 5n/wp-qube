@@ -1,0 +1,11 @@
+{
+  "core": null,
+  "phpVersion": "7.4",
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/gutenberg.zip"
+  ],
+  "themes": [
+    ".",
+    "https://downloads.wordpress.org/theme/tt1-blocks.zip"
+  ]
+}

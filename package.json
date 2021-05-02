@@ -1,0 +1,28 @@
+{
+  "name": "query",
+  "version": "0.1.0",
+  "description": "Block Theme for WordPress Developers.",
+  "author": "Genki Nakatani",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "theme"
+  ],
+  "devDependencies": {
+    "@wordpress/env": "^4.0.1",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.1",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.5",
+    "tailwindcss": "^2.1.1"
+  },
+  "scripts": {
+    "build:style": "postcss assets/css/style.css -o assets/build/style.css",
+    "build:editor-style": "postcss assets/css/editor-style.css -o assets/build/editor-style.css",
+    "dev:style": "postcss assets/css/style.css -o assets/build/style.css -w",
+    "dev:editor-style": "postcss assets/css/editor-style.css -o assets/build/editor-style.css -w",
+    "wp-env": "wp-env"
+  }
+}
