@@ -2,16 +2,16 @@
 /**
  * Functions and definitions
  *
- * @package Query
+ * @package Qube
  */
 
-if (!function_exists('query_theme_setup')) {
+if (!function_exists('qube_theme_setup')) {
   /**
    * Sets up theme defaults and registers support for various WordPress features.
   */
-  function query_theme_setup() {
+  function qube_theme_setup() {
     // Make theme available for translation.
-    //load_theme_textdomain('query', get_template_directory().'/languages');
+    //load_theme_textdomain('qube', get_template_directory().'/languages');
 
     // Let WordPress manage the document title.
     add_theme_support('title-tag');
@@ -42,12 +42,12 @@ if (!function_exists('query_theme_setup')) {
     remove_theme_support('core-block-patterns');
   }
 }
-add_action('after_setup_theme', 'query_theme_setup');
+add_action('after_setup_theme', 'qube_theme_setup');
 
 /**
  * Enqueue scripts and styles.
  */
-function query_theme_scripts() {
-  wp_enqueue_style('query-style', get_template_directory_uri().'/assets/build/style.css', [], wp_get_theme()->get('Version'));
+function qube_theme_scripts() {
+  wp_enqueue_style('qube-style', get_template_directory_uri().'/assets/build/style.css', [], wp_get_theme()->get('Version'));
 }
-add_action('wp_enqueue_scripts', 'query_theme_scripts');
+add_action('wp_enqueue_scripts', 'qube_theme_scripts');

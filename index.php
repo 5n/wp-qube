@@ -2,5 +2,5 @@
 /**
  * Block Theme
  *
- * @package Query
+ * @package Qube
  */
