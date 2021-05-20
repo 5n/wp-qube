@@ -31,8 +31,7 @@ if (!function_exists('qube_theme_setup')) {
 
     // Enqueue editor styles.
     add_editor_style([
-			'./assets/build/blocks.css',
-			'./assets/build/editor-style.css'
+			'./assets/css/editor.min.css'
     ]);
 
     // Add support for responsive embedded content.
@@ -48,6 +47,6 @@ add_action('after_setup_theme', 'qube_theme_setup');
  * Enqueue scripts and styles.
  */
 function qube_theme_scripts() {
-  wp_enqueue_style('qube-style', get_template_directory_uri().'/assets/build/style.css', [], wp_get_theme()->get('Version'));
+  wp_enqueue_style('qube-style', get_template_directory_uri().'/assets/css/style.min.css', [], wp_get_theme()->get('Version'));
 }
 add_action('wp_enqueue_scripts', 'qube_theme_scripts');

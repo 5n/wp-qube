@@ -19,10 +19,10 @@
     "tailwindcss": "^2.1.1"
   },
   "scripts": {
-    "build:style": "postcss assets/css/style.css -o assets/build/style.css",
-    "build:editor-style": "postcss assets/css/editor-style.css -o assets/build/editor-style.css",
-    "dev:style": "postcss assets/css/style.css -o assets/build/style.css -w",
-    "dev:editor-style": "postcss assets/css/editor-style.css -o assets/build/editor-style.css -w",
+    "build:style": "postcss ./src/css/main.css -o ./assets/css/style.min.css",
+    "build:editor-style": "postcss ./src/css/editor.css -o ./assets/css/editor.min.css",
+    "dev:style": "postcss ./src/css/main.css -o ./assets/css/style.min.css -w",
+    "dev:editor-style": "postcss ./src/css/editor.css -o ./assets/css/editor.min.css -w",
     "wp-env": "wp-env"
   }
 }
