@@ -1,13 +1,6 @@
 {
-  "name": "qube",
-  "version": "0.1.0",
-  "description": "Block Theme for WordPress Developers.",
   "author": "Genki Nakatani",
   "license": "GPL-2.0-or-later",
-  "keywords": [
-    "WordPress",
-    "theme"
-  ],
   "devDependencies": {
     "@wordpress/env": "^4.0.1",
     "autoprefixer": "^10.2.5",
