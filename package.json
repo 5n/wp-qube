@@ -12,10 +12,10 @@
     "tailwindcss": "^2.1.1"
   },
   "scripts": {
-    "build:style": "postcss ./src/css/main.css -o ./assets/css/style.min.css",
-    "build:editor-style": "postcss ./src/css/editor.css -o ./assets/css/editor.min.css",
-    "dev:style": "postcss ./src/css/main.css -o ./assets/css/style.min.css -w",
-    "dev:editor-style": "postcss ./src/css/editor.css -o ./assets/css/editor.min.css -w",
+    "build:style": "NODE_ENV=production postcss ./src/css/main.css -o ./assets/css/style.min.css",
+    "build:editor-style": "NODE_ENV=production postcss ./src/css/editor.css -o ./assets/css/editor.min.css",
+    "dev:style": "NODE_ENV=development postcss ./src/css/main.css -o ./assets/css/style.min.css -w",
+    "dev:editor-style": "NODE_ENV=development postcss ./src/css/editor.css -o ./assets/css/editor.min.css -w",
     "wp-env": "wp-env"
   }
 }
